@@ -1,0 +1,549 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+body {
+  background-color: #eff1f2;
+  font-family: sans-serif;
+}
+
+.content {
+  grid-area: content;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: linear-gradient(
+    to right,
+    rgba(200, 107, 142, 1),
+    rgba(218, 105, 250, 1),
+    rgba(110, 125, 253, 1)
+  );
+  justify-content: center;
+}
+.footer {
+  grid-area: footer;
+  background: white;
+}
+.container {
+  font-size: 1.5em;
+  width: 100%;
+  height: 100;
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "sidebar" "content" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px 800px 250px;
+}
+
+.content,
+.sidebar,
+.footer {
+  padding: 1em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+nav li {
+  list-style: none;
+  padding: 1em 0;
+}
+
+nav li a {
+  color: white;
+  font-weight: 700;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  opacity: 1;
+}
+.hero {
+  max-width: 90 px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero img {
+  width: 200px;
+}
+
+.hero h1 {
+  font-size: 2em;
+  font-weight: 300;
+  color: #373046;
+}
+
+.hero p {
+  font-weight: 300;
+  line-height: 1.3em;
+  color: #98abad;
+}
+
+.action-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background: #567bfb;
+  padding: 0.5em 2em;
+  border-radius: 60px;
+  margin: 1em 0;
+  transition: 0.3s;
+}
+
+footer ul {
+  max-width: 640px;
+  margin: 2em auto;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+
+footer ul li {
+  list-style: none;
+  align-self: flex-end;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #c1c6ce;
+}
+
+footer ul li img {
+  width: 30%;
+}
+
+footer p {
+  font-size: 0.8em;
+}
+
+@media (min-width: 1040px) {
+  .container {
+    grid-template-areas: "sidebar content" "sidebar footer";
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 300px 1f;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .sidebar {
+    background: linear-gradient(
+      rgba(200, 107, 142, 1),
+      rgba(218, 105, 250, 1),
+      rgba(110, 125, 253, 1)
+    );
+    padding-top: 10em;
+  }
+  .hero {
+    text-align: left;
+    margin: 7em 0;
+  }
+  .hero img {
+    width: 200px;
+    float: right;
+  }
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero p {
+    width: 60%;
+  }
+  footer ul {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  footer ul li a img {
+    width: 20%;
+  }
+}
+*/
+.konten {
+  background-color: gold;
+  width: 400px;
+  height: 1000px;
+}
+
+.menu {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ddd;
+  width: 100;
+  /* float: left; */
+  margin-top: 0px;
+}
+
+.gambar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+
+.menu nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  line-height: 40px;
+  background: #ddd;
+  flex-direction: row;
+}
+
+.menu nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu nav ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px;
+  color: black;
+}
+
+/* nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+} */
+
+/* nav ul li {
+  float: left;
+} */
+
+/* nav ul li a {
+  color: black;
+  width: 100%;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 0px 18px 0px 18px;
+  text-decoration: none;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/*
+.mainmenubtn {
+  background-color: rgb(106, 114, 117);
+  color: black;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 20px;
+  padding-left: auto;
+  padding-right: auto;
+}
+.mainmenubtn:hover {
+  background-color: black;
+  color: #f1f1f1;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-child {
+  display: none;
+  background-color: rgb(136, 0, 160);
+  min-width: 100%;
+}
+.dropdown-child a {
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-child a:hover {
+  color: #f1f1f1;
+  background-color: yellowgreen;
+}
+
+.dropdown:hover .dropdown-child {
+  display: contents;
+  background-color: green;
+  width: 100%;
+}
+
+.dropdown-child:hover {
+  background-color: black;
+}
+*/
+.logokab {
+  height: 15px;
+  width: 15px;
+}
+
+.baratas {
+  /* width: 20%; */
+  background-color: #ddd;
+}
+.baratas a {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.baratas img {
+  width: 15px;
+}
+
+.baratas :hover {
+  background-color: aquamarine;
+}
+
+.kolomkiri {
+  float: right;
+  width: 35%;
+  background-color: aliceblue;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.kolomkiri h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.pilihan {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  line-height: 20px;
+}
+
+.pilihan ul li a {
+  color: blue;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.pilihan ul li:hover {
+  width: 100%;
+  color: black;
+  background-color: greenyellow;
+}
+
+/* .pihihan nav {
+  display: none;
+  clear: both;
+  width: 100%;
+  background-color: ;
+}
+.pilihan ul {
+  margin: 0;
+  padding: 0;
+  background-color: ;
+}
+.pilihan ul li {
+  list-style-type: none;
+}
+.pilihan li a {
+  display: block;
+  text-decoration: none;
+  margin-top: 5px;
+  color: navy;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+  width: 170px;
+  background-color: white;
+  text-align: left;
+}
+
+.pilihan li a:hover {
+  background-color: #222121;
+  color: #ddd;
+  width: 170px;
+} */
+
+.container {
+  background-color: aliceblue;
+  width: 58%;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: flex;
+}
+
+.container h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container h4 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container li {
+  margin-left: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.ol {
+  margin-left: 20px;
+}
+
+img.gambar1 {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.gambar1:hover {
+  width: 100%;
+  margin-left: 0px;
+}
+
+.BENGKULU {
+  margin-top: 150px;
+}
+
+.container p {
+  text-align: justify;
+  text-indent: 3em;
+  margin: 10px 5px 5px 10px;
+  padding: 0px 0px 0px 0px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.peta {
+  width: 100%;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.kolomkiri {
+  display: flex;
+}
+
+.kolomkiri p {
+  text-align: justify;
+  text-indent: 3em;
+  color: black;
+  display: flex;
+}
+
+.menubawah h2 {
+  text-align: center;
+  font-size: large;
+  margin-top: 13px;
+}
+
+.menubawah {
+  width: 100%;
+  height: 170px;
+  float: left;
+  background-color: aquamarine;
+  margin-top: 10px;
+}
+
+.kontainerbawah {
+  background-color: #222121;
+  color: aliceblue;
+  width: 25%;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* @media screen and (min-width: 720px) {
+  .pilihan li {
+    float: none;
+    width: 100%;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .pilihan li {
+    float: none;
+    width: 100%;
+  }
+
+  .menu nav li {
+    width: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .menu li a {
+    font-size: 12px;
+  }
+
+  nav {
+    padding-left: 20px;
+  }
+} */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+/* buat kontainer baru,display flex,justify content center. */
